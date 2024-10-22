@@ -74,6 +74,7 @@ export default function HomePage() {
               </div>
               {positions.map((position: any) => (
                 <PositionCard
+                key={Number(`${position?.id}`.replace(/,/g, ""))}
                   type={position.positionType}
                   id={Number(`${position?.id}`.replace(/,/g, ""))}
                   value={Number(`${position?.positionValue}`.replace(/,/g, ""))}
