@@ -13,8 +13,7 @@ const nextConfig = {
   // See: https://github.com/polkadot-js/api/issues/5636
   transpilePackages: ["@polkadot/.*"],
   // Standalone builds for Dockerfiles
-  output:
-    process.env.NEXT_BUILD_STANDALONE === "true" ? "standalone" : undefined,
+  output: "export",
 };
 
 module.exports = nextConfig;

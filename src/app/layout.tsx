@@ -54,8 +54,6 @@ export default function RootLayout({ children }: PropsWithChildren) {
           </TooltipProvider>
           <ToastConfig />
         </ClientProviders>
-
-        {!!env.isProduction && <Analytics />}
       </body>
     </html>
   );
